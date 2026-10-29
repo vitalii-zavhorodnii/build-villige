@@ -1,0 +1,6 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/buildings/building_screen_base.tscn" id="1"]
+
+[node name="AlchemyShop" instance=ExtResource("1")]
+screen_title = "Alchemy Shop"

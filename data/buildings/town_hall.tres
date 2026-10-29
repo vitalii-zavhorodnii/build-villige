@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BuildingDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/buildings/building_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/buildings/townhall.png" id="2"]
+[ext_resource type="Texture2D" path="res://icon.svg" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/town_hall.tscn" id="4"]
+
+[resource]
+script = ExtResource("1")
+id = &"town_hall"
+title = "Town Hall"
+price = 300
+description = "The seat of government and the heart of the settlement."
+model = ExtResource("2")
+icon = ExtResource("3")
+scene = ExtResource("4")

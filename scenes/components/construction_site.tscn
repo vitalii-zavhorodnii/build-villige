@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://7hx51hx46we3"]
+
+[ext_resource type="Script" path="res://scripts/settlement/construction_site.gd" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="style_normal"]
+bg_color = Color(0.1, 0.35, 0.2, 0.85)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.9, 0.5, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="style_hover"]
+bg_color = Color(0.15, 0.5, 0.3, 0.95)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 0.7, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxEmpty" id="style_focus"]
+
+[node name="ConstructionSite" type="Node2D" unique_id=73716057]
+script = ExtResource("1")
+
+[node name="PlaceSprite" type="Sprite2D" parent="." unique_id=1522520288]
+unique_name_in_owner = true
+
+[node name="ConstructionButton" type="Button" parent="." unique_id=403399649]
+unique_name_in_owner = true
+offset_right = 80.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("style_normal")
+theme_override_styles/pressed = SubResource("style_hover")
+theme_override_styles/hover = SubResource("style_hover")
+theme_override_styles/focus = SubResource("style_focus")
+text = "Build
+0"

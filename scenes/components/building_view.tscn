@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cu8e56ec821hs"]
+
+[ext_resource type="Script" path="res://scripts/buildings/building_view.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/components/notification_indicator.tscn" id="2"]
+
+[sub_resource type="StyleBoxEmpty" id="style_empty"]
+
+[node name="BuildingView" type="Node2D" unique_id=1976273238]
+script = ExtResource("1")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=467619149]
+unique_name_in_owner = true
+centered = false
+
+[node name="ClickArea" type="Button" parent="." unique_id=49167784]
+unique_name_in_owner = true
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_styles/normal = SubResource("style_empty")
+theme_override_styles/pressed = SubResource("style_empty")
+theme_override_styles/hover = SubResource("style_empty")
+theme_override_styles/focus = SubResource("style_empty")
+flat = true
+
+[node name="NotificationIndicator" parent="." unique_id=1041690077 instance=ExtResource("2")]
+unique_name_in_owner = true
+visible = false
+z_index = 100

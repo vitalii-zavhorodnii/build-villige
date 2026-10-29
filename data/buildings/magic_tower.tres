@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BuildingDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/buildings/building_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/buildings/mage_tower.png" id="2"]
+[ext_resource type="Texture2D" path="res://icon.svg" id="3"]
+[ext_resource type="Texture2D" path="res://assets/buildings/mage_tower_place.png" id="5"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/magic_tower.tscn" id="4"]
+
+[resource]
+script = ExtResource("1")
+id = &"magic_tower"
+title = "Magic Tower"
+price = 200
+description = "A place to study arcane lore and cast spells."
+model = ExtResource("2")
+place_model = ExtResource("5")
+icon = ExtResource("3")
+scene = ExtResource("4")

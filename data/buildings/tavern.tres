@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BuildingDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/buildings/building_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/buildings/inn.png" id="2"]
+[ext_resource type="Texture2D" path="res://icon.svg" id="3"]
+[ext_resource type="Texture2D" path="res://assets/buildings/inn_place.png" id="5"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/tavern.tscn" id="4"]
+
+[resource]
+script = ExtResource("1")
+id = &"tavern"
+title = "Tavern"
+price = 100
+description = "A warm place for travelers to rest, eat and share rumors."
+model = ExtResource("2")
+place_model = ExtResource("5")
+icon = ExtResource("3")
+scene = ExtResource("4")
